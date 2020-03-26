@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("particlesjs")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -23,3 +24,17 @@ require("channels")
 // ----------------------------------------------------
 
 import "bootstrap";
+
+let particles = () => Particles.init({
+  selector: '.background'
+});
+
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+
+document.addEventListener('turbolinks:load', () => {
+  // particles();
+});
+
