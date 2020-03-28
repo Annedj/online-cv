@@ -14,14 +14,16 @@ body {
 
 .home-image {
   height: 100vh;
-  width: 100%;
   background-position: bottom right;
-  background-size: 100% 82%;
+  object-fit: cover;
+  // background-size: 100% 82%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
   position: absolute;
-  top: 150px;
+  top: 500px;
   left: 300px;
   color: white;
   font-size: 46px;
